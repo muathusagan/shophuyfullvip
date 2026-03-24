@@ -32,18 +32,24 @@ input{width:90%;padding:8px;margin:5px;border-radius:8px;border:none}
 </div>
 
 <!-- LOGIN -->
-<div id="loginBox">
-<h4>Login</h4>
-<input id="username" placeholder="member"><br>
-<input id="password" type="password" placeholder="36"><br>
-<button class="btn-login" onclick="login()">Đăng nhập</button>
-<p id="status"></p>
+<div id="loginBox" style="position:fixed; left:15px; bottom:15px; background:#111; padding:20px; border-radius:12px; width:220px; border: 1px solid #333; box-shadow: 0 4px 15px rgba(0,0,0,0.7);">
+    <h4 style="margin-top:0; text-align:center; color:#00bfff;">👤 ĐĂNG NHẬP</h4>
+    <input id="username" type="text" placeholder="Tài khoản (member)" style="width:90%; padding:10px; margin-bottom:10px; background:#222; color:white; border:1px solid #444;">
+    <input id="password" type="password" placeholder="Mật khẩu (36)" style="width:90%; padding:10px; margin-bottom:15px; background:#222; color:white; border:1px solid #444;">
+    <button class="btn-login" onclick="login()" style="font-weight:bold; letter-spacing:1px;">ĐĂNG NHẬP</button>
+    <p id="status" style="text-align:center; margin-bottom:0; font-size:14px; margin-top:10px;"></p>
 </div>
 
 <!-- ADMIN BUTTON -->
 <button onclick="adminLogin()" style="position:fixed;top:70px;right:10px;background:gold;color:black;padding:8px;border-radius:8px;">👑 Admin</button>
 
 <!-- PRODUCTS -->
+ <div style="background:#1c1c1c; margin: 20px auto; padding:20px; width: 90%; max-width: 400px; border-radius:12px; box-shadow:0 0 10px #00bfff; text-align:center;">
+    <h3 style="margin-top:0; color:#00bfff;">📩 Gửi Yêu Cầu Hỗ Trợ</h3>
+    <input type="text" placeholder="Tên của bạn" style="width:90%; padding:10px; margin-bottom:10px; background:#222; color:white; border:1px solid #444;">
+    <input type="text" placeholder="Vấn đề bạn gặp phải (Lỗi tool, nạp tiền...)" style="width:90%; padding:10px; margin-bottom:15px; background:#222; color:white; border:1px solid #444;">
+    <button class="btn-login" onclick="alert('Đã gửi yêu cầu cho Admin Gia Huy!')" style="width:95%; font-weight:bold;">Gửi Cho Admin</button>
+</div>
 <div class="container" id="products"></div>
 
 <!-- CART -->
